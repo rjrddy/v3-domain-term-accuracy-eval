@@ -1,0 +1,62 @@
+{
+  "models_compared": 2,
+  "audio_variants_per_model": 3,
+  "term_occurrences_evaluated": 18,
+  "rows": [
+    {
+      "model": "tiny",
+      "variant": "clean",
+      "hypothesis": " And so my fellow Americans, ask not what your country can do for you, ask what you can do for your country.",
+      "wer": 0.0,
+      "term_occurrences": 3,
+      "term_correct": 3,
+      "term_accuracy": 1.0
+    },
+    {
+      "model": "tiny",
+      "variant": "noise",
+      "hypothesis": " And so my fellow Americans  ask not what your country can do for you  ask what you can do for your country.",
+      "wer": 0.0,
+      "term_occurrences": 3,
+      "term_correct": 3,
+      "term_accuracy": 1.0
+    },
+    {
+      "model": "tiny",
+      "variant": "quiet",
+      "hypothesis": " And so my fellow Americans, ask not what your country can do for you, ask what you can do for your country.",
+      "wer": 0.0,
+      "term_occurrences": 3,
+      "term_correct": 3,
+      "term_accuracy": 1.0
+    },
+    {
+      "model": "base",
+      "variant": "clean",
+      "hypothesis": " And so my fellow Americans, ask not what your country can do for you, ask what you can do for your country.",
+      "wer": 0.0,
+      "term_occurrences": 3,
+      "term_correct": 3,
+      "term_accuracy": 1.0
+    },
+    {
+      "model": "base",
+      "variant": "noise",
+      "hypothesis": " And so my fellow America asked not what your country can do for you,  ask what you can do for your country.",
+      "wer": 0.09090909090909091,
+      "term_occurrences": 3,
+      "term_correct": 2,
+      "term_accuracy": 0.6666666666666666
+    },
+    {
+      "model": "base",
+      "variant": "quiet",
+      "hypothesis": " And so my fellow Americans, ask not what your country can do for you,  ask what you can do for your country.",
+      "wer": 0.0,
+      "term_occurrences": 3,
+      "term_correct": 3,
+      "term_accuracy": 1.0
+    }
+  ],
+  "source": "https://github.com/openai/whisper/blob/main/tests/jfk.flac"
+}

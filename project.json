@@ -1,0 +1,26 @@
+{
+  "id": "V3",
+  "name": "Domain-term accuracy eval",
+  "problem": "WER plus domain-term accuracy (e.g. medical terms) on public audio. Shows where general WER hides the failures that matter.",
+  "results": [
+    [
+      "Open ASR models compared",
+      "models_compared",
+      ""
+    ],
+    [
+      "Public audio variants per model",
+      "audio_variants_per_model",
+      ""
+    ],
+    [
+      "Aligned term occurrences evaluated",
+      "term_occurrences_evaluated",
+      ""
+    ]
+  ],
+  "diagram": "PublicAudioVariants --> WhisperTinyAndBase --> WordAlignment --> WERAndTermAccuracy",
+  "limits": "Two real open ASR models on one public JFK speech clip with clean, noisy and quiet variants. Civic-domain terms are explicitly fellow americans and country; this is not a medical-ASR evaluation. Metrics count aligned term occurrences rather than presence anywhere in the transcript. The report in evidence/report.md compares every WER/term-accuracy pair. Perturbed versions are not independent speakers, and the small sample cannot rank model quality generally. Ground-truth transcript and term list are committed; source is the public openai/whisper test clip.",
+  "next": "Add a licensed multi-speaker domain corpus and independently reviewed terminology annotations.",
+  "status": "done"
+}
